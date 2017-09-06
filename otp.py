@@ -25,11 +25,7 @@ def xor(plaintext, key):
 	if len(plaintext) != len(key):
 		raise IndexError('Plaintext and key should be the same size')
 	
-	cipher = bytearray(len(plaintext))
-	for i, byte in enumerate(plaintext):
-		cipher[i] = byte ^ key[i]
-	
-	return cipher
+	return bytes(map(lambda x, y: x ^ y, plaintext, key))
 
 if __name__ == '__main__':
 	# Parse options |--------------------------------------------------|
