@@ -1,2 +1,2 @@
-# OTP
-Naive implementations of the One-time pad
+# OTP-Python
+Naive implementations of the One-time pad in Python.
